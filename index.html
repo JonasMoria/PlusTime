@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav class="col-12 row">
+        <div class="col-4">
+            <h1 style="margin: 2%; color:#483D8B;">PLUSTIME</h1>
+        </div>
+        <div class="col-8">
+            <div class="form-check form-switch">
+                <button class="btn" id="btnLight" style="background-color: aliceblue;float: right;margin-top: 1%;">
+                    LIGHT</button>
+                <button class="btn" id="btnDark"
+                    style="background-color: rgb(5, 10, 30);float: right;margin-top: 1%; color: aliceblue;">
+                    DARK</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Relógio Digital -->
+    <section id="relogio" class="row">
+        <div class="col-11" id="data">
+            <h1 class="col-9">DD MM YYYY</h1>
+        </div>
+
+        <div class="col-4">
+            <h1 id="hora"> ... </h1>
+            <h2 class="legenda">HORAS</h2>
+        </div>
+
+        <div class="col-4">
+            <h1 id="minuto"> ... </h1>
+            <h2 class="legenda">MINUTOS</h2>
+        </div>
+
+        <div class="col-4">
+            <h1 id="segundo"> ... </h1>
+            <h2 class="legendaS">SEGUNDOS</h2>
+        </div>
+    </section>
+
+    <!-- Previsão do Tempo -->
+    <section id="prevTempo" class="row col-12">
+        <h1 class="col-12" style="color: whitesmoke;" id="clima">Clima</h1>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 boxPrev" id="boxPrev1">
+            <h1 id="cidade" style="margin-top: 6%;">...</h1>
+        </div>
+
+        <div class="col-lg-4 col-md-3 col-sm-12 boxPrev" id="boxPrev2">
+            <h1 id="temperatura-valor">...</h1>
+            <h2 id="temperatura-desc">...</h2>
+        </div>
+
+        <div class="col-lg-4 col-md-5 col-sm-12 boxPrev" id="boxPrev3">
+            <h1>Vento</h1>
+            <h2 id="vento-velo">...</h2>
+        </div>
+
+        <div class="col-lg-4 col-md-3 col-sm-12 boxPrev" id="boxPrev4">
+            <h1>Umidade</h1>
+            <h2 id="umidade">...</h2>
+        </div>
+    </section>
+
+
+    <script src="js/temas.js"></script>
+    <script src="js/relogio.js"></script>
+    <script src="js/tempo.js"></script>
+</body>
+
+</html>
